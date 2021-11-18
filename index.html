@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Webaurion Notes Viewer</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content="Webaurion Notes Viewer" />
+        <meta name="description" content="An easier way to view notes. " />
+
+        <!-- Icon -->
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="style/global.css" />
+        <link rel="stylesheet" href="style/main.css" />
+        <link rel="stylesheet" href="style/dropzone.css" />
+        <link rel="stylesheet" href="style/tests.css" />
+
+        <!-- Libraries -->
+        <script defer src="lib/csv2json.min.js"></script> <!-- csv2json : https://csvjson.com -->
+
+        <!-- Scripts -->
+        <script defer src="main.js"></script>
+        <script defer src="scripts/dropzone.js"></script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;900&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <form class="csv-form">
+            <div class="dropzone-wrapper">
+                <label for="csv-file" class="dropzone">
+                    <input type="file" name="csv-file" id="csv-file" required />
+                    <input type="text" id="csv-file-name" name="csv-file-name" placeholder="Glisser le fichier" readonly />
+                </label>
+            </div>
+
+            <div class="button-validate-wrapper">
+                <button type="button">Valider</button>
+            </div>
+        </form>
+
+        <main>
+            <div class="select-lessons-wrapper">
+                <select id="select-lessons"></select>
+            </div>
+
+            <div class="tests"></div>
+        </main>
+    </body>
+</html>

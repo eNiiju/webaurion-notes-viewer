@@ -1,0 +1,70 @@
+main {
+    width: 90%;
+    max-width: 700px;
+    display: none; /* Hidden by default */
+    margin: 0 auto; /* Centered horizontally */
+}
+
+form.csv-form {
+    position: absolute;
+    width: 90%;
+    max-width: 800px;
+    inset: 50% 0 0 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropzone-wrapper {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.button-validate-wrapper {
+    height: 50px;
+    width: 30%;
+    min-width: 150px;
+}
+
+.button-validate-wrapper button {
+    height: 100%;
+    width: 100%;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-weight: 900;
+    border: 0;
+    cursor: pointer;
+    transition: font-size 200ms;
+}
+.button-validate-wrapper button:hover {
+    font-size: 2rem;
+}
+.button-validate-wrapper button:active {
+    font-size: 1.6rem;
+}
+
+.select-lessons-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#select-lessons {
+    margin: 50px auto 0 auto;
+    width: 60%;
+    height: 50px;
+    padding-left: 10px;
+    font-weight: 900;
+    background-color: var(--accent);
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#select-lessons:focus-visible {
+    outline: none;
+}

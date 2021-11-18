@@ -1,0 +1,52 @@
+:root {
+    --background: #121212;
+    --test-background: #1e1e1e;
+    --accent: #07a797;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background-color: var(--background);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Scrollbar : Only big screens */
+@media only screen and (min-device-width: 736px) {
+    /* Firefox */
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: var(--accent) var(--test-background);
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: var(--test-background);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--accent);
+        border-radius: 9999px;
+        border: 5px solid var(--test-background);
+    }
+}

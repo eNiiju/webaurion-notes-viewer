@@ -1,0 +1,100 @@
+.test {
+    --gap: 15px;
+    width: 100%;
+    max-height: 70px;
+    background-color: var(--test-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: var(--gap);
+    cursor: pointer;
+    transition: max-height 300ms ease-out;
+}
+
+.test-main-infos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.test:first-child {
+    margin-top: var(--gap);
+}
+
+.test:last-child {
+    margin-bottom: 50px;
+}
+
+.test-main-infos .left {
+    flex: 1;
+    min-width: 0;
+    padding-right: 15px;
+    display: flex;
+}
+
+.test-main-infos .right {
+    flex: 0 0 30px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.5);
+}
+
+.test-name-and-details {
+    overflow: hidden;
+}
+
+.test-note {
+    font-weight: 900;
+}
+
+.test h2,
+.test h3 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.test h2 {
+    font-weight: 500;
+}
+
+.test h3 {
+    font-weight: 300;
+}
+
+.test-more-infos {
+    margin-top: 30px;
+    display: none; /* Hidden by default */
+}
+
+.test.active {
+    max-height: 300px;
+}
+
+.test.active .test-more-infos {
+    display: block;
+}
+
+.test-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.test-info:last-child {
+    margin-bottom: 0;
+}
+
+.test-info-title {
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.test-info-value {
+    font-weight: 900;
+}
